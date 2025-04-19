@@ -1,0 +1,39 @@
+<!-- account.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Account</title>
+  <link rel="stylesheet" href="style.css"> <!-- same style -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="account.html" class="active">Account</a></li>
+        <!-- အခြား menu items -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="account-section">
+      <h1>Your Account</h1>
+      <p>Welcome back! Sign in to manage your account.</p>
+
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p>Don’t have an account? <a href="#">Sign Up</a></p>
+    </section>
+  </main>
+</body>
+</html>
