@@ -1,63 +1,300 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Arzhel's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-</head>
-<body>
-  <section class="home">
-    <div class="container">
-      <div class="avatar-wrapper">
-        <img src="assets/avatar.png" alt="My Avatar" class="avatar">
-        <div class="glow"></div>
-      </div>
-      <h1>Hi, I'm <span class="name">Arzhel</span></h1>
-      <p class="typing" id="typing-text"></p>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
-</body>
-</html>
-<nav class="flex justify-center gap-10 p-5 text-lg bg-black shadow-md">
-  <a href="index.html" class="hover:text-cyan-400">Home</a>
-  <a href="about.html" class="hover:text-cyan-400">About</a>
-  <a href="portfolio.html" class="hover:text-cyan-400">Portfolio</a>
-  <a href="contact.html" class="hover:text-cyan-400">Contact</a>
-</nav>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Arzhel</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Include the gradient background CSS -->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Spaced
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&amp;display=swap" rel="stylesheet"/>
   <style>
-    body {
-      background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1e1e2f);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-    }
-
-    @keyframes gradientBG {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
+   body {
+      font-family: "Barlow Condensed", sans-serif;
     }
   </style>
-</head>
-<body class="text-white">
-  <!-- Your content goes here -->
-</body>
+ </head>
+ <body class="bg-gradient-to-b from-[#1a1a3d] via-[#2a2a5a] to-[#1a1a3d] text-white">
+  <div class="relative overflow-hidden min-h-screen flex flex-col">
+   <!-- Top section with background illustration -->
+   <div class="relative w-full max-w-[1440px] mx-auto flex flex-col">
+    <img alt="Night sky background with a large glowing moon, a bare tree silhouette, a street lamp glowing, a person standing near the tree, and a bench silhouette on rolling hills" class="w-full object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/f0b49d45-28b0-4faf-0220-5872b17dc9d1.jpg" width="1440"/>
+    <!-- Overlay content on top of the image -->
+    <div class="absolute inset-0 flex flex-col px-6 sm:px-12 md:px-20 lg:px-32 xl:px-40 2xl:px-48">
+     <header class="flex justify-between items-center pt-8">
+      <div class="text-white text-[18px] tracking-widest font-semibold">
+       SPACED
+      </div>
+      <nav class="hidden md:flex space-x-8 text-[12px] text-white/70 font-semibold tracking-widest">
+       <a class="hover:text-white transition" href="#">
+        Home
+       </a>
+       <a class="hover:text-white transition" href="#">
+        Account
+       </a>
+       <a class="hover:text-white transition" href="#">
+        Features
+       </a>
+       <a class="hover:text-white transition" href="#">
+        Developers
+       </a>
+       <a class="hover:text-white transition" href="#">
+        Pricing
+       </a>
+       <a class="hover:text-white transition" href="#">
+        Support
+       </a>
+       <button class="bg-[#6b6f9f] text-[10px] font-semibold tracking-widest px-4 py-2 rounded-md hover:bg-[#8a8ebf] transition">
+        GET STARTED
+       </button>
+      </nav>
+      <button aria-label="Open menu" class="md:hidden text-white text-2xl focus:outline-none">
+       <i class="fas fa-bars">
+       </i>
+      </button>
+     </header>
+     <main class="flex-grow flex flex-col justify-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl mt-20">
+      <p class="text-[10px] text-white/70 font-light tracking-widest mb-2">
+       The Night Sky
+      </p>
+      <h1 class="text-[32px] sm:text-[40px] md:text-[48px] leading-[1.1] font-light tracking-wide max-w-[14ch]">
+       Beyond The
+       <br/>
+       Naked Eye
+      </h1>
+      <div class="mt-6 flex space-x-3">
+       <button class="bg-[#6b6f9f] text-[10px] font-semibold tracking-widest px-5 py-2 rounded-md hover:bg-[#8a8ebf] transition">
+        GET STARTED
+       </button>
+       <button class="bg-[#3a3f6f] text-[10px] font-semibold tracking-widest px-5 py-2 rounded-md hover:bg-[#5a5f8f] transition">
+        LEARN MORE
+       </button>
+      </div>
+     </main>
+     <!-- Bottom logos row -->
+     <div class="absolute bottom-6 left-0 right-0 flex justify-center space-x-12 opacity-30" style="filter: brightness(0.6);">
+      <img alt="Cricket logo in white" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/c4148c47-2ced-47da-b83b-0d0358d2fd9c.jpg" width="80"/>
+      <img alt="Sprint logo in white" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/efa2670d-d41e-4557-64af-57614599bcef.jpg" width="80"/>
+      <img alt="VO logo in white" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/8aa895bc-5176-4709-19e5-c92d0d6c99d6.jpg" width="80"/>
+      <img alt="Verizon logo in white" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/be9128de-71c0-4811-677a-3c6286ea63fa.jpg" width="80"/>
+      <img alt="AT&amp;T logo in white" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/c69e758a-d0d4-4990-35aa-1b9236db692f.jpg" width="80"/>
+      <img alt="MetroPCS logo in white" class="h-5 object-contain" height="20" src="https://storage.googleapis.com/a1aa/image/11cd02af-f4cd-4b4b-aff4-6ce04cbf6728.jpg" width="80"/>
+     </div>
+    </div>
+   </div>
+   <!-- Middle content section -->
+   <section class="max-w-[1440px] mx-auto px-6 sm:px-12 md:px-20 lg:px-32 xl:px-40 2xl:px-48 mt-24 flex flex-col space-y-20">
+    <!-- The Glossary Of Telescopes -->
+    <div>
+     <p class="text-[10px] text-[#6b6f9f] font-semibold tracking-widest mb-2">
+      The Glossary Of Telescopes
+     </p>
+     <h2 class="text-[20px] sm:text-[24px] font-light tracking-wide mb-2 max-w-[28ch]">
+      EXPERIENCE THE EXTRAORDINARY
+     </h2>
+     <p class="text-[10px] text-white/60 max-w-[48ch] mb-10 leading-tight">
+      Have you ever finally just gave in to the temptation and read your
+          horoscope in the newspaper on Sunday morning? Sure, we all have. Not
+          most of us. It is a curiosity.
+     </p>
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-8 max-w-[900px]">
+      <div class="flex space-x-3">
+       <img alt="Icon showing moon and mountains representing Pictures In The Sky" class="w-8 h-8 flex-shrink-0" height="32" src="https://storage.googleapis.com/a1aa/image/4e175110-f1ea-46ed-2179-cbf5a825851d.jpg" width="32"/>
+       <div>
+        <h3 class="text-[12px] font-semibold mb-1">
+         Pictures In The Sky
+        </h3>
+        <p class="text-[10px] text-white/60 leading-tight max-w-[18ch]">
+         Have you ever finally just gave in to the temptation and read
+                your horoscope in the newspaper on Sunday morning? Sure, we all
+                have.
+        </p>
+       </div>
+      </div>
+      <div class="flex space-x-3">
+       <img alt="Icon showing location pin representing Asteroids" class="w-8 h-8 flex-shrink-0" height="32" src="https://storage.googleapis.com/a1aa/image/9a0a05d7-1a49-4484-1f3b-11c6ec6e9491.jpg" width="32"/>
+       <div>
+        <h3 class="text-[12px] font-semibold mb-1">
+         Asteroids
+        </h3>
+        <p class="text-[10px] text-white/60 leading-tight max-w-[18ch]">
+         Have you ever finally just gave in to the temptation and read
+                your horoscope in the newspaper on Sunday morning? Sure, we all
+                have.
+        </p>
+       </div>
+      </div>
+      <div class="flex space-x-3">
+       <img alt="Icon showing star representing The Glossary Of Telescopes" class="w-8 h-8 flex-shrink-0" height="32" src="https://storage.googleapis.com/a1aa/image/86dde846-8172-4e57-df03-3e9ff6f3402f.jpg" width="32"/>
+       <div>
+        <h3 class="text-[12px] font-semibold mb-1">
+         The Glossary Of Telescopes
+        </h3>
+        <p class="text-[10px] text-white/60 leading-tight max-w-[18ch]">
+         Have you ever finally just gave in to the temptation and read
+                your horoscope in the newspaper on Sunday morning? Sure, we all
+                have.
+        </p>
+       </div>
+      </div>
+      <div class="flex space-x-3">
+       <img alt="Icon showing camera representing How To Look Up" class="w-8 h-8 flex-shrink-0" height="32" src="https://storage.googleapis.com/a1aa/image/1a627780-aca5-4a94-d22d-f9562b0c42d2.jpg" width="32"/>
+       <div>
+        <h3 class="text-[12px] font-semibold mb-1">
+         How To Look Up
+        </h3>
+        <p class="text-[10px] text-white/60 leading-tight max-w-[18ch]">
+         Have you ever finally just gave in to the temptation and read
+                your horoscope in the newspaper on Sunday morning? Sure, we all
+                have.
+        </p>
+       </div>
+      </div>
+      <div class="flex space-x-3">
+       <img alt="Icon showing globe representing Space The Final Frontier" class="w-8 h-8 flex-shrink-0" height="32" src="https://storage.googleapis.com/a1aa/image/adb30f2d-a6ad-421c-ee64-488d64b0ee88.jpg" width="32"/>
+       <div>
+        <h3 class="text-[12px] font-semibold mb-1">
+         Space The Final Frontier
+        </h3>
+        <p class="text-[10px] text-white/60 leading-tight max-w-[18ch]">
+         Have you ever finally just gave in to the temptation and read
+                your horoscope in the newspaper on Sunday morning? Sure, we all
+                have.
+        </p>
+       </div>
+      </div>
+      <div class="flex space-x-3">
+       <img alt="Icon showing location pin representing Dude You Re Getting A Telescope" class="w-8 h-8 flex-shrink-0" height="32" src="https://storage.googleapis.com/a1aa/image/04ba48b9-d79a-43ef-6e51-ba96cf45a560.jpg" width="32"/>
+       <div>
+        <h3 class="text-[12px] font-semibold mb-1">
+         Dude You Re Getting A Telescope
+        </h3>
+        <p class="text-[10px] text-white/60 leading-tight max-w-[18ch]">
+         Have you ever finally just gave in to the temptation and read
+                your horoscope in the newspaper on Sunday morning? Sure, we all
+                have.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Radio Astronomy section -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-10 md:space-y-0">
+     <div class="max-w-md">
+      <p class="text-[10px] text-[#6b6f9f] font-semibold tracking-widest mb-2">
+       Radio Astronomy
+      </p>
+      <h3 class="text-[20px] font-light tracking-wide mb-4 max-w-[20ch]">
+       See More Than Your Eye Does
+      </h3>
+      <p class="text-[10px] text-white/60 leading-tight mb-6 max-w-[28ch]">
+       Shared Windows Packages, Reseller Packages, Each Hosting Directory
+            Categories has a list of plans. Each plan is accompanied by a short
+            synopsis.
+      </p>
+      <p class="text-[10px] text-white/60 leading-tight mb-6 max-w-[28ch]">
+       At one shot, you would be able to sort these plans by any of the
+            following factors – Price, rating, Web Space, Data Transfer. With
+            such a high range of flexibility in filtering.
+      </p>
+      <button class="bg-[#6b6f9f] text-[10px] font-semibold tracking-widest px-5 py-2 rounded-md hover:bg-[#8a8ebf] transition">
+       START NOW
+      </button>
+     </div>
+     <div class="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+      <img alt="Silhouette of an astronaut standing in front of a large purple moon with stars and a glowing light" class="w-full h-full object-contain" height="256" src="https://storage.googleapis.com/a1aa/image/37388ac6-e192-4146-1410-22800b3649d7.jpg" width="256"/>
+     </div>
+    </div>
+    <!-- The Night Sky section -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-10 md:space-y-0">
+     <div class="relative w-48 h-64 md:w-64 md:h-80 flex-shrink-0">
+      <img alt="Person on a ladder holding a glowing location pin light in front of a large smartphone screen with a map" class="w-full h-full object-contain" height="320" src="https://storage.googleapis.com/a1aa/image/62041b50-8128-464c-c378-1d6f922b588a.jpg" width="256"/>
+     </div>
+     <div class="max-w-md text-right">
+      <p class="text-[10px] text-[#6b6f9f] font-semibold tracking-widest mb-2">
+       The Night Sky
+      </p>
+      <h3 class="text-[20px] font-light tracking-wide mb-4 max-w-[20ch] mx-auto">
+       FINDING THE HAPPYNESS IS NOT
+       <br/>
+       THAT HARD IN MOBILE
+      </h3>
+      <p class="text-[10px] text-white/60 leading-tight mb-6 max-w-[28ch] mx-auto">
+       Shared Windows Packages, Reseller Packages, Each Hosting Directory
+            Categories has a list of plans. Each plan is accompanied by a short
+            synopsis.
+      </p>
+      <p class="text-[10px] text-white/60 leading-tight mb-6 max-w-[28ch] mx-auto">
+       At one shot, you would be able to sort these plans by any of the
+            following factors – Price, rating, Web Space, Data Transfer. With
+            such a high range of flexibility in filtering.
+      </p>
+      <button class="bg-[#6b6f9f] text-[10px] font-semibold tracking-widest px-5 py-2 rounded-md hover:bg-[#8a8ebf] transition mx-auto">
+       SEARCH IT
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Footer -->
+   <footer class="max-w-[1440px] mx-auto px-6 sm:px-12 md:px-20 lg:px-32 xl:px-40 2xl:px-48 mt-24 mb-12 flex flex-col md:flex-row md:justify-between md:items-start space-y-12 md:space-y-0">
+    <div class="flex flex-col space-y-2">
+     <div class="text-white text-[18px] tracking-widest font-semibold">
+      SPACED
+     </div>
+     <p class="text-[10px] text-white/50 font-semibold tracking-widest max-w-[12ch]">
+      UNLIMITED STAR WARS AWAITS YOU, SIR!
+     </p>
+    </div>
+    <div class="grid grid-cols-3 gap-x-20 text-[10px] text-white/50 font-semibold tracking-widest">
+     <div class="flex flex-col space-y-2">
+      <a class="hover:text-white transition" href="#">
+       Home
+      </a>
+      <a class="hover:text-white transition" href="#">
+       About
+      </a>
+      <a class="hover:text-white transition" href="#">
+       Services
+      </a>
+      <a class="hover:text-white transition" href="#">
+       Privacy Policy
+      </a>
+     </div>
+     <div class="flex flex-col space-y-2">
+      <a class="hover:text-white transition" href="#">
+       Home
+      </a>
+      <a class="hover:text-white transition" href="#">
+       About
+      </a>
+      <a class="hover:text-white transition" href="#">
+       Services
+      </a>
+      <a class="hover:text-white transition" href="#">
+       Privacy Policy
+      </a>
+     </div>
+     <div class="flex flex-col space-y-2">
+      <a class="hover:text-white transition" href="#">
+       Home
+      </a>
+      <a class="hover:text-white transition" href="#">
+       About
+      </a>
+      <a class="hover:text-white transition" href="#">
+       Services
+      </a>
+      <a class="hover:text-white transition" href="#">
+       Privacy Policy
+      </a>
+     </div>
+    </div>
+   </footer>
+   <!-- Bottom wave shape -->
+   <div class="w-full">
+    <img alt="Bottom wave shape silhouette with bench and plants on hills" class="w-full object-cover" height="120" src="https://storage.googleapis.com/a1aa/image/aa439df8-0991-4a37-c195-67f5f485f724.jpg" width="1440"/>
+   </div>
+  </div>
+ </body>
 </html>
